@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陳彥愷的個人作品集</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        :root {
+            --bs-primary: #710dfd; /* Bootstrap Primary Color */
+            --bs-body-bg: #ffffff; /* 背景色 */
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bs-body-bg);
+            color: #333; /* 標準文字顏色 */
+        }
+        .navbar-brand, .nav-link {
+            font-weight: 600;
+        }
+        .hero-section {
+            padding: 8rem 0;
+            background-color: var(--bs-primary);
+            color: white;
+        }
+        .section-padding {
+            padding: 4rem 0;
+        }
+        .project-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: none;
+            border-radius: 0.5rem;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#home">陳彥愷的作品集</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">專案/作品集</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#assignment">課堂作業</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#others">其他</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">大家好，我是陳彥愷</h1>
+            <p class="lead mb-4">熱衷於學習人工智慧 和 C++ 程式設計，在各種課程中發掘自己的興趣。</p>
+            <a href="#projects" class="btn btn-light btn-lg fw-bold px-4">探索我的作品</a>
+        </div>
+    </header>
+
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary fw-bold">🚀 關於我</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <img src="陳彥愷.JPG" class="img-fluid rounded-circle shadow-lg" alt="個人頭像" style="width: 200px; height: 200px; object-fit: cover;">
+                </div>
+                <div class="col-lg-8">
+                    <p class="fs-5">**陳彥愷**</p>
+                    <p>我是目前就讀於國立台北教育大學，我主要使用**C++** 和 **JavaScript**。這個學期，我特別專研於使用 **HTML** 來快速建構網站。</p>
+                    <p>我也熱愛運動、音樂，希望能多元學習與發展。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary fw-bold">💡 專案 / 作品集</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <article class="card h-100 project-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/0d6efd/ffffff?text=Project+1" class="card-img-top" alt="作品一">
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 fw-bold">本學期期末專案：響應式購物網站</h3>
+                            <p class="card-text text-muted">使用 Bootstrap 5 實現，涵蓋產品列表、購物車等功能。</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 project-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/0d6efd/ffffff?text=Project+2" class="card-img-top" alt="作品二">
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 fw-bold">Bootstrap 語義化練習</h3>
+                            <p class="card-text text-muted">強調 HTML5 語義標籤的使用，並運用 Sass 變數客製化主題。</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 project-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/0d6efd/ffffff?text=Project+3" class="card-img-top" alt="作品三">
+                        <div class="card-body">
+                            <h3 class="card-title fs-5 fw-bold">JavaScript 待辦事項清單</h3>
+                            <p class="card-text text-muted">結合原生 JS 操作 DOM，實現新增、刪除功能。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="assignment" class="section-padding bg-white">
+    <div class="container">
+        <h2 class="text-center mb-5 text-primary fw-bold">📝 網頁設計專案(二) 作業展示</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title fs-4 fw-bold text-primary mb-3 text-center">【Part A】YouTube 作品 (嵌入失敗備案)</h3>
+                        <div class="position-relative d-flex justify-content-center align-items-center mb-3" style="height: 250px; background-color: #f0f0f0; border-radius: 8px; overflow: hidden;">
+                            <img src="https://img.youtube.com/vi/jWbyJp_S0vU/hqdefault.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="YouTube 影片預覽圖">
+                            <i class="bi bi-play-circle-fill text-white position-absolute" style="font-size: 4rem; opacity: 0.8;"></i>
+                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+                        </div>
+                        <p class="text-center text-danger mb-2"><strong>因 YouTube 嵌入限制 (錯誤 153)，影片無法直接播放。</strong></p>
+                        <p class="text-center text-muted">請點擊下方連結至 YouTube 頻道觀看完整內容：</p>
+                        <div class="text-center">
+                            <a href="https://www.youtube.com/watch?v=jWbyJp_S0vU" target="_blank" class="btn btn-primary btn-sm">前往 YouTube 觀看 <i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
+                        <p class="mt-3 text-muted text-center">這是我的 YouTube 影片作品展示。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100 shadow-sm border-success">
+                    <div class="card-header bg-success text-white text-center fw-bold">【Part B】AI 協作：量子彈球遊戲</div>
+                    <div class="card-body p-0 position-relative" style="background-color: #0a0a12; min-height: 450px; overflow: hidden; border-radius: 0 0 8px 8px;">
+                        <div id="game-score-tag" style="position: absolute; top: 10px; left: 10px; color: #4cc9f0; font-family: monospace; z-index: 10;">SCORE: 0</div>
+                        <canvas id="partBGameCanvas" style="display: block; width: 100%; height: 450px; cursor: crosshair;"></canvas>
+                        <div id="game-overlay" class="position-absolute top-50 start-50 translate-middle text-center w-100" style="z-index: 20; background: rgba(10, 10, 18, 0.8); padding: 20px;">
+                            <h4 class="text-white mb-3">QUANTUM BREAKER</h4>
+                            <button class="btn btn-success rounded-pill px-4" onclick="initPartBGame()">開始體驗遊戲</button>
+                            <p class="text-secondary small mt-2">使用滑鼠或手指滑動擋板</p>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-light small text-muted">
+                        <i class="bi bi-info-circle"></i> 技術重點：Canvas API、Lerp 平滑運動算法。
+                    </div>
+                </div>
+            </div>
+        </div> </div>
+</section>
+
+    <section id="others" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary fw-bold">📚 其他：學習心得與技能</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fs-4 fw-bold text-primary">核心技術與技能</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">**前端框架/工具：** Bootstrap 5, RWD 設計</li>
+                                <li class="list-group-item">**標記語言：** HTML5 (語意化)</li>
+                                <li class="list-group-item">**樣式語言：** CSS3, Flexbox, Grid</li>
+                                <li class="list-group-item">**程式語言：** C++, JavaScript (ES6+)</li>
+                                <li class="list-group-item">**版本控制：** Git / GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fs-4 fw-bold text-primary">學習心得分享</h3>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">「學習 Bootstrap 5 最大的收穫是理解了『行動裝置優先』的設計思維。」</p>
+                            </blockquote>
+                            <p>我發現語意化標籤的使用，對網站的 SEO 和可讀性至關重要。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary fw-bold">📧 聯絡我</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p class="lead mb-4">歡迎透過電子郵件或 GitHub 與我聯繫。</p>
+                    <p class="fs-5"><strong>電子郵件：</strong>1071835@gmail.com</p>
+                    <p class="fs-5"><strong>GitHub：</strong>https://111316013.github.io/website_CSS/</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; <span id="currentYear"></span> 陳彥愷的個人作品集 | 基於 Bootstrap 5 開發</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+
+<script> 
+// Part B: 量子彈球遊戲邏輯適配版 (加上雙斜線註解即可修復)
+
+let b_canvas, b_ctx, b_isGameRunning = false;
+let b_paddle = { width: 100, height: 10, x: 0, y: 0 };
+let b_ball = { x: 0, y: 0, radius: 6, dx: 3, dy: -3, speed: 4 };
+let b_bricks = [];
+let b_score = 0;
+let b_targetX = 0;
+
+function initPartBGame() {
+    // 確保找到 Overlay 元素
+    b_score = 0; 
+    const scoreTag = document.getElementById('game-score-tag');
+    if (scoreTag) scoreTag.innerText = "SCORE: 0";
+    const overlay = document.getElementById('game-overlay');
+    if (overlay) overlay.style.display = 'none';
+    
+    b_canvas = document.getElementById('partBGameCanvas');
+    if (!b_canvas) return;
+    
+    b_ctx = b_canvas.getContext('2d');
+    
+    // 設定畫布解析度
+    b_canvas.width = b_canvas.offsetWidth;
+    b_canvas.height = b_canvas.offsetHeight;
+    
+    b_paddle.y = b_canvas.height - 30;
+    b_ball.x = b_canvas.width / 2;
+    b_ball.y = b_canvas.height - 50;
+    
+    // 初始化磚塊
+    b_bricks = [];
+    for(let c=0; c<6; c++) {
+        b_bricks[c] = [];
+        for(let r=0; r<3; r++) {
+            b_bricks[c][r] = { x: 10 + c*65, y: 40 + r*25, w: 60, h: 20, status: 1 };
+        }
+    }
+    
+    b_isGameRunning = true;
+    b_canvas.addEventListener('mousemove', (e) => {
+        let rect = b_canvas.getBoundingClientRect();
+        b_targetX = e.clientX - rect.left - b_paddle.width/2;
+    });
+
+    requestAnimationFrame(partBLoop);
+}
+
+function partBLoop() {
+    if(!b_isGameRunning) return;
+    
+    b_ctx.fillStyle = '#0a0a12';
+    b_ctx.fillRect(0, 0, b_canvas.width, b_canvas.height);
+    
+    // 繪製擋板 (加上平滑移動)
+    b_paddle.x += (b_targetX - b_paddle.x) * 0.2;
+    b_ctx.fillStyle = '#e94560';
+    b_ctx.fillRect(b_paddle.x, b_paddle.y, b_paddle.width, b_paddle.height);
+    
+    // 繪製球
+    b_ball.x += b_ball.dx;
+    b_ball.y += b_ball.dy;
+    
+    // 牆壁碰撞
+    if(b_ball.x < 0 || b_ball.x > b_canvas.width) b_ball.dx *= -1;
+    if(b_ball.y < 0) b_ball.dy *= -1;
+    if(b_ball.y > b_canvas.height) {
+        b_isGameRunning = false;
+        const overlay = document.getElementById('game-overlay');
+        if (overlay) overlay.style.display = 'block';
+        return;
+    }
+    
+    // 擋板碰撞
+    if(b_ball.y + b_ball.radius > b_paddle.y && b_ball.x > b_paddle.x && b_ball.x < b_paddle.x + b_paddle.width) {
+        b_ball.dy *= -1;
+        b_ball.y = b_paddle.y - b_ball.radius;
+    }
+    
+    // 磚塊繪製與碰撞
+    b_ctx.fillStyle = '#4cc9f0';
+    b_bricks.forEach(col => col.forEach(b => {
+        if(b.status === 1) {
+            b_ctx.fillRect(b.x, b.y, b.w, b.h);
+            if(b_ball.x > b.x && b_ball.x < b.x + b.w && b_ball.y > b.y && b_ball.y < b.y + b.h) {
+                b.status = 0;
+                b_ball.dy *= -1;
+                b_score += 10;
+                const scoreTag = document.getElementById('game-score-tag');
+                if (scoreTag) scoreTag.innerText = "SCORE: " + b_score;
+            }
+        }
+    }));
+    
+    b_ctx.beginPath();
+    b_ctx.arc(b_ball.x, b_ball.y, b_ball.radius, 0, Math.PI*2);
+    b_ctx.fillStyle = "#fff";
+    b_ctx.fill();
+    
+    requestAnimationFrame(partBLoop);
+}
+</script>
+</script>
+</script>
+</body>
+</html>
+
+
